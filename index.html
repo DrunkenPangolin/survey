@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>FCC RWD Project 2 - Survey</title>
+</head>
+
+<!-- Script Tester -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--Main Body-->
+<div id="main">
+    <header>
+        <h1 id="title">
+            Post-COVID Travel Survey
+        </h1>
+        <p id="description">
+            Investigating the impact of COVID-19 on travel plans
+        </p>
+    </header>
+  
+<!--Survey Form-->
+    <form id="survey-form">
+        <div class="question">
+        <label for="name" id="name-label">
+            Name?
+        </label>
+        <input
+            type="text"
+            id="name"
+            placeholder="insert name"
+            required
+            >
+        </div>
+    
+        <div class="question">
+        <label for="email" id="email-label">
+            Email?
+        </label>
+        <input
+            type="email"
+            id="email"
+            placeholder="insert email"
+            required
+            >
+        </div>
+
+        <div class="question">
+        <label for="age" id="number-label">
+            Age?
+        </label>
+        <input
+            type="number"
+            id="number"
+            placeholder="Insert age"
+            min="0"
+            max="120"
+            >
+        </div>
+
+        <div class="question">
+        <label for="consider">Will you be travelling as soon as it is possible?</label>
+        <input
+            name="consider"
+            type="radio"
+            value="yes"
+            class="radio-input"
+            >Yes
+        </input>
+        <input
+            name="consider"
+            type="radio"
+            value="no"
+            class="radio-input"
+            >No
+        </input>
+        <input
+            name="consider"
+            type="radio"
+            value="maybe"
+            class="radio-input"
+            >I'll consider it
+        </label>
+        </div>
+
+        <div class="question">
+        <select for="location" id="dropdown" name="mostLike" required>Where do you live?
+            <option value="Africa">Africa</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+        </div>
+    
+        <div class="question">
+            <p>Where would you consider travelling?</p>
+        <label for="Africa">
+            <input
+                id="Africa"
+                type="checkbox"
+                name="Africa"
+                value="Africa"
+                >
+            Africa
+            </label>
+        <label for="North America">
+            <input
+               id="North America"
+               type="checkbox"
+               name="North America"
+               value="North America"
+               >
+            North America
+           </label>
+        <label for="South America">
+            <input
+               id="South America"
+               type="checkbox"
+               name="South America"
+               value="South America"
+               >
+            South America
+           </label>
+        <label for="Antarctica">
+            <input
+               id="Antarctica"
+               type="checkbox"
+               name="Antarctica"
+               value="Antarctica"
+               >
+            Antarctica
+           </label>
+        <label for="Asia">
+            <input
+               id="Asia"
+               type="checkbox"
+               name="Asia"
+               value="Asia"
+               >
+            Asia
+           </label>
+        <label for="Europe">
+            <input
+               id="Europe"
+               type="checkbox"
+               name="Europe"
+               value="Europe"
+               >
+            Europe
+           </label>
+        <label for="Oceania">
+            <input
+               id="Oceania"
+               type="checkbox"
+               name="Oceania"
+               value="Oceania"
+               >
+            Oceania
+           </label>
+        </div>
+
+    <label for="comments"></label>
+    <textarea
+        id="comments"
+        placeholder="Please insert any additional comments here"
+        >
+    </textarea>
+
+    <button type="submit" id="submit">Submit</button>
+   
+</form>
+</div>
+</html>
